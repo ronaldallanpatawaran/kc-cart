@@ -18,3 +18,6 @@ $_['text_fb']           = '<i class="fa fa-facebook"></i>';
 $_['text_tw']           = '<i class="fa fa-twitter"></i>';
 $_['text_ig']           = '<i class="fa fa-instagram"></i>';
 $_['text_powered']      = '&copy; %s %s. All Rights Reserved.';
+$_['text_parts_services'] = 'K-C PARTS & SERVICES';
+$_['text_product_categories'] = 'PRODUCT CATEGORIES';
+$_['text_legalities'] = 'LEGALITIES';

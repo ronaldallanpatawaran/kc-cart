@@ -81,7 +81,7 @@ div.required .control-label:before {
 }
 /* top */
 #top {
-	background-color: #EEEEEE;
+	background-color: #ffffff;
 	border-bottom: 1px solid #e2e2e2;
 	padding: 4px 0px 3px 0;
 	margin: 0 0 20px 0;
@@ -311,11 +311,24 @@ div.required .control-label:before {
 }
 /* footer */
 footer {
-	margin-top: 30px;
+	margin-top: 0px;
 	padding-top: 30px;
-	background-color: #303030;
+	background: url('backgrounds/general/footerBG.jpg') center center;
 	border-top: 1px solid #ddd;
 	color: #e2e2e2;
+	min-height: 250px;
+}
+#footer_logos{
+	min-height: 220px;
+	background-color: #eeeeee;
+}
+label.footer_labels{
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    padding: 4%;
+    background-color: #dd1122;
+    font-size: 20px;
 }
 footer hr {
 	border-top: none;

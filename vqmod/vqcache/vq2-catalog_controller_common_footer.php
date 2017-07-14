@@ -22,6 +22,13 @@ if (version_compare(VERSION, '2.0') < 0) {
 		$data['text_order'] = $this->language->get('text_order');
 		$data['text_wishlist'] = $this->language->get('text_wishlist');
 		$data['text_newsletter'] = $this->language->get('text_newsletter');
+		$data['text_parts_services'] = $this->language->get('text_parts_services');
+		$data['text_product_categories'] = $this->language->get('text_product_categories');
+		$data['text_legalities'] = $this->language->get('text_legalities');
+
+		$this->load->language('information/contact');
+		$data['text_telephone'] = $this->language->get('text_telephone');
+		$data['text_address'] = $this->language->get('text_address');
 
 		$data['text_fb'] = $this->language->get('text_fb');
 		$data['text_tw'] = $this->language->get('text_tw');

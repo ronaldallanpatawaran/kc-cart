@@ -42,36 +42,8 @@
 <?php echo $google_analytics; ?>
 </head>
 <body class="<?php echo $class; ?>">
-<nav id="top">
-  <div class="container">
-    <?php echo $currency; ?>
-    <?php echo $language; ?>
-    <div id="top-links" class="nav pull-right">
-      <ul class="list-inline">
-        <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
-        <li class="dropdown"><a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span> <span class="caret"></span></a>
-          <ul class="dropdown-menu dropdown-menu-right">
-            <?php if ($logged) { ?>
-            <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
-            <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
-            <li><a href="<?php echo $transaction; ?>"><?php echo $text_transaction; ?></a></li>
-            <li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>
-            <li><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
-            <?php } else { ?>
-            <li><a href="<?php echo $register; ?>"><?php echo $text_register; ?></a></li>
-            <li><a href="<?php echo $login; ?>"><?php echo $text_login; ?></a></li>
-            <?php } ?>
-          </ul>
-        </li>
-        <li><a href="<?php echo $wishlist; ?>" id="wishlist-total" title="<?php echo $text_wishlist; ?>"><i class="fa fa-heart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_wishlist; ?></span></a></li>
-        <li><a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_shopping_cart; ?></span></a></li>
-        <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 <header>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-sm-4">
         <div id="logo">
@@ -82,59 +54,38 @@
           <?php } ?>
         </div>
       </div>
-      <div class="col-sm-5"><?php echo $search; ?>
+      <div id="menu_col" class="col-md-8">
+        <nav id="menu" class="navbar">
+          <div id="upper_top_links" class="col-md-12">
+            <label>FOR SALES</label><i class="email"></i> &nbsp; <a href=""><label><?php echo strtoupper('sales@kcparts.com.sg'); ?></label></a> &nbsp; <label>(65)-6254 8022</label>
+          </div>
+          <div class="navbar-header"><span id="category" class="visible-xs"><?php echo $text_menu; ?></span>
+            <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+          </div>
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="<?php echo $home; ?>" <?php echo (isset($route) && $route=="common/home") ? 'class="active"' : '' ; ?>><?php echo $text_home; ?></a>
+              </li>
+              <li><a href="<?php echo $about; ?>" <?php echo (isset($route) && $route=="information/information&information_id=4") ? 'class="active"' : '' ; ?>><?php echo $text_about; ?></a>
+              </li>
+              <li>
+                <a href="<?php echo $contact; ?>" <?php echo (isset($route) && $route=="information/contact") ? 'class="active"' : '' ; ?>><?php echo $text_contact; ?></a>
+              </li>
+              <li><a href="<?php echo $product; ?>" <?php echo (isset($route) && $route=="product/category") ? 'class="active"' : '' ; ?>><?php echo $text_product; ?></a>
+              </li>
+              <li><a href="<?php echo $login; ?>" <?php echo (isset($route) && $route=="account/login") ? 'class="active"' : '' ; ?>><?php echo $text_login; ?></a>
+              </li>
+              <li><a href="<?php echo $register; ?>" <?php echo (isset($route) && $route=="account/register") ? 'class="active"' : '' ; ?>><?php echo $text_register; ?></a>
+              </li>
+              <li><a href="<?php echo $shopping_cart; ?>" <?php echo (isset($route) && $route=="checkout/cart") ? 'class="active"' : '' ; ?>><?php echo $text_shopping_cart; ?></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-      <div class="col-sm-3"><?php echo $cart; ?></div>
     </div>
   </div>
 </header>
-<div class="container">
-  <nav id="menu" class="navbar">
-    <div class="navbar-header"><span id="category" class="visible-xs"><?php echo $text_menu; ?></span>
-      <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
-    </div>
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-      <ul class="nav navbar-nav">
-        <li><a href="<?php echo $home; ?>" <?php echo (isset($route) && $route=="common/home") ? 'class="active"' : '' ; ?>><?php echo $text_home; ?></a></li>
-        <?php if ($categories) { ?>
-        <?php foreach ($categories as $category) { ?>
-        <?php if ($category['children']) { ?>
-        <li class="dropdown">
-          <?php if ($top_category_id == $category['category_id']) { ?>
-          <a href="<?php echo $category['href']; ?>" class="dropdown-toggle active" data-toggle="dropdown"><?php echo $category['name']; ?></a>
-          <?php } else { ?>
-          <a href="<?php echo $category['href']; ?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo $category['name']; ?></a>
-          <?php } ?>
-          <div class="dropdown-menu">
-            <div class="dropdown-inner">
-              <?php foreach (array_chunk($category['children'], ceil(count($category['children']) / $category['column'])) as $children) { ?>
-              <ul class="list-unstyled">
-                <?php foreach ($children as $child) { ?>
-                <?php if ($top_child_id == $child['category_id']) { ?>
-                <li><a href="<?php echo $child['href']; ?>" class="active"><?php echo $child['name']; ?></a></li>
-                <?php } else { ?>
-                <li><a href="<?php echo $child['href']; ?>"><?php echo $child['name']; ?></a></li>
-                <?php } ?>
-                <?php } ?>
-              </ul>
-              <?php } ?>
-            </div>
-            <a href="<?php echo $category['href']; ?>" class="see-all"><?php echo $text_all; ?> <?php echo $category['name']; ?></a> </div>
-        </li>
-        <?php } else { ?>
-        <?php if ($top_category_id == $category['category_id']) { ?>
-        <li><a href="<?php echo $category['href']; ?>" class="active"><?php echo $category['name']; ?></a></li>
-        <?php } else { ?>
-        <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
-        <?php } ?>
-        <?php } ?>
-        <?php } ?>
-        <?php } ?>
-        <li><a href="<?php echo $contact; ?>" <?php echo (isset($route) && $route=="information/contact") ? 'class="active"' : '' ; ?>><?php echo $text_contact; ?></a></li>
-      </ul>
-    </div>
-  </nav>
-</div>
 <?php if ($content_header) { ?>
 <div class="container">
   <div class="row">

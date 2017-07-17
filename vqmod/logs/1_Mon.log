@@ -964,3 +964,17 @@ VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><a href="<?php echo
 ----------------------------------------------------------------------
 
 
+---------- Date: 2017-07-17 15:21:43 ~ IP : ::1 ----------
+REQUEST URI : /e-commerce/kc-cart/index.php?route=information/contact
+MOD DETAILS:
+   modFile   : C:\xampp\htdocs\e-commerce\kc-cart\vqmod/xml/shopencart-news-blog.xml
+   id        : 
+   version   : 1.1
+   vqmver    : 
+   author    : Flo from shopencart.com
+
+File Name    : catalog/view/theme/*/template/common/footer.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
+----------------------------------------------------------------------
+
+

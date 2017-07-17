@@ -14,6 +14,10 @@
     font-family: 'Gotham Narrow Book';
     src: url('fonts/Gotham Narrow Book.otf');
 }
+@font-face{
+    font-family: 'Gotham Narrow Medium';
+    src: url('fonts/Gotham Narrow Medium.otf');
+}
 
 body {
 	font-family: 'RobotoRegular';
@@ -138,6 +142,10 @@ div.required .control-label:before {
 #top-links a + a {
 	margin-left: 15px;
 }
+#menu_col{
+	min-height: 140px;
+}
+
 /* logo */
 #logo {
 	margin: 0 0 10px 0;
@@ -206,21 +214,27 @@ div.required .control-label:before {
 }
 /* menu */
 #menu {
-	background-color: #229ac8;
-	background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);
+	background-color: #ffffff;
+	background-image: linear-gradient(to bottom, #ffffff, #ffffff);
 	background-repeat: repeat-x;
-	border-color: #1f90bb #1f90bb #145e7a;
+	border-color: #ffffff #ffffff #ffffff;
 	min-height: 40px;
+	position: relative;
+    bottom: -85px;
 }
 #menu .nav > li > a {
-	color: #fff;
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	color: #040404 !important;
+	font-size: 18px;
 	padding: 10px 15px 10px 15px;
 	min-height: 15px;
 	background-color: transparent;
+	font-family: "Gotham Narrow Medium";
 }
 #menu .nav > li > a:hover, #menu .nav > li.open > a {
 	background-color: rgba(0, 0, 0, 0.1);
+}
+.navbar-collapse.collapse{
+	float: right;
 }
 #menu .dropdown-menu {
 	padding-bottom: 0;
@@ -323,6 +337,23 @@ div.required .control-label:before {
 #content {
 	min-height: 600px;
 }
+header .container-fluid{
+	max-width: 80%;
+}
+#upper_top_links{
+	text-align: right;
+}
+#common_banner{
+	margin-top: 10px;
+	background: url('backgrounds/general/sub-banner.jpg') center center;
+	height: 300px;
+}
+#upper_top_links label{
+	color: #184972;
+	font-family: "Gotham Narrow Medium";
+	font-size: 18px;
+}
+
 /* footer */
 footer {
 	margin-top: 0px;
@@ -382,7 +413,7 @@ a, a:hover{
 	color: #1bc3f4 !important;
 }
 label.footer_labels{
-    width: 280px;
+    width: 300px;
     height: 50px;
     text-align: center;
     padding: 4%;
@@ -869,7 +900,46 @@ h2.price {
 /* Default Breakpoint */
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+	button.btn_yellow{
+		background-color: #fdb813;
+	    color: #1d2b5e;
+	    border-color: #fdb813;
+	    font-size: 18px;
+	    font-family: "RobotoRegular";
+	    height: 45px;
+	    font-weight: bold;
+	    width: 60%;
+	    margin-bottom: 20px;
+	}
+	#menu {
+	    background-color: #58585a;
+	    background-image: none;
+	    background-repeat: repeat-x;
+	    border-color: #ffffff #ffffff #ffffff;
+	    min-height: 40px;
+	    position: static;
+	}
+	.navbar-collapse.collapse{
+		float: left;
+		width: 100%;
+	}
 
+	#menu .nav > li > a{
+		color: #ffffff !important;
+	}
+
+	header .container-fluid{
+		max-width: 100%;
+	}
+	#upper_top_links{
+		display: none;
+	}
+	#common_banner{
+		height: 150px;
+	}
+	#menu_col{
+		min-height: 50px;
+	}
 }
 
 /* Medium Devices, Desktops */

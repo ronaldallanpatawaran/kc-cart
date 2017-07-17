@@ -26,7 +26,7 @@
         <div class="col-md-12">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-4 col-sm-6 col-xs-6 ">
+            <div class="col-md-4 col-sm-6 col-xs-12 ">
                   <label class="footer_labels"><?php echo $text_parts_services; ?></label>
                   <br><br>
                   <span><?php echo $telephone; ?></span>
@@ -35,7 +35,7 @@
                   <br><br>
                   <a href="<?php echo $contact; ?>"><button class="btn_yellow"><?php echo $button_contactus; ?></button></a>
               </div>
-                <div class="col-md-4 col-sm-6 col-xs-6 ">
+                <div class="col-md-4 col-sm-6 col-xs-12 ">
                   <label class="footer_labels"><?php echo $text_product_categories; ?></label>
                   <br><br>
                   <?php 
@@ -49,7 +49,7 @@
                   ?><br>
                   <a href="<?php echo $product; ?>"><button class="btn_yellow"><?php echo $button_view_products; ?></button></a>
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="col-md-4 col-sm-6 col-xs-12">
                   <label style="text-align: left;" class="footer_labels"><?php echo $text_legalities; ?>
                     <br><br><br>
                     <?php 

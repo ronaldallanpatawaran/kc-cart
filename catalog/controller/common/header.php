@@ -21,6 +21,7 @@ class ControllerCommonHeader extends Controller {
 			$data['information_id'] = 0;
 		}
 
+		$data['extra_tags'] = array();
 		$data['base'] = $server;
 		$data['description'] = $this->document->getDescription();
 		$data['keywords'] = $this->document->getKeywords();
@@ -70,6 +71,10 @@ class ControllerCommonHeader extends Controller {
 		$data['text_category'] = $this->language->get('text_category');
 		$data['text_menu'] = $this->language->get('text_menu');
 		$data['text_all'] = $this->language->get('text_all');
+		$data['text_about'] = $this->language->get('text_about');
+		$data['text_login'] = $this->language->get('text_login');
+		$data['text_product'] = $this->language->get('text_product');
+
 
 		$data['home'] = $this->url->link('common/home');
 		$data['wishlist'] = $this->url->link('account/wishlist', '', 'SSL');
@@ -84,6 +89,9 @@ class ControllerCommonHeader extends Controller {
 		$data['shopping_cart'] = $this->url->link('checkout/cart');
 		$data['checkout'] = $this->url->link('checkout/checkout', '', 'SSL');
 		$data['contact'] = $this->url->link('information/contact');
+		$data['product'] = $this->url->link('product/category');
+		$data['about'] = $this->url->link('information/information&information_id=4');
+
 		$data['telephone'] = $this->config->get('config_telephone');
 
 		$status = true;

@@ -1,6 +1,6 @@
 <?php echo $header; ?>
-<div class="container">
-  <ul class="breadcrumb">
+<div id="common_banner"><span><strong>BULKINGS</strong>Contacts</span></div>
+<div class="container" style="margin-top: 100px;">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
     <?php } ?>

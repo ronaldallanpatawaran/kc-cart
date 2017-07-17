@@ -6,14 +6,28 @@
 	max-width: 1130px;
 }*/
 
+@font-face{
+    font-family: 'RobotoRegular';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Gotham Narrow Book';
+    src: url('fonts/Gotham Narrow Book.otf');
+}
+
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'RobotoRegular';
 	font-weight: 400;
 	color: #666;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 20px;
 	width: 100%;
+	overflow-x: hidden;
 }
+.row {
+	width: 100% !important;
+}
+
 h1, h2, h3, h4, h5, h6 { color: #444; }
 /* default font size */
 .fa { font-size: 14px; }
@@ -312,18 +326,63 @@ div.required .control-label:before {
 /* footer */
 footer {
 	margin-top: 0px;
+	padding-top: 0px;
+	border-top: 1px solid #ddd;
+	color: #999999;
+	min-height: 290px;
+}
+footer #footer_links{
+	padding: 5px;
+}
+footer #top{
+	margin-top: 0px;
 	padding-top: 30px;
 	background: url('backgrounds/general/footerBG.jpg') center center;
 	border-top: 1px solid #ddd;
-	color: #e2e2e2;
+	color: #999999;
 	min-height: 250px;
 }
+footer #top span{
+	color: #ffffff;
+	font-size: 16px;
+}
+footer label{
+	color: #ffffff;
+}
+
+#footer_title{
+	font-size: 24px;
+	color: #333333;
+	font-family: "Gotham Narrow Book";
+}
+#footer_title_col{
+    margin-top: 34px;
+    margin-bottom: 3%;
+}
+.logos_col{
+	text-align: center;
+    height: 100px;
+}
+button.btn_yellow{
+	background-color: #fdb813;
+    color: #1d2b5e;
+    border-color: #fdb813;
+    font-size: 18px;
+    font-family: "RobotoRegular";
+    height: 45px;
+    font-weight: bold;
+    width: 220px;
+}
 #footer_logos{
-	min-height: 220px;
-	background-color: #eeeeee;
+    min-height: 220px;
+    background-color: #f4f4f4;
+    padding-top: 4px;
+}
+a, a:hover{
+	color: #1bc3f4 !important;
 }
 label.footer_labels{
-    width: 300px;
+    width: 280px;
     height: 50px;
     text-align: center;
     padding: 4%;
@@ -366,6 +425,7 @@ footer .socials a i { vertical-align: middle; font-size: 20px; }
 	margin: 0 0 20px 0;
 	padding: 8px 0;
 	border: 1px solid #ddd;
+	display: none;
 }
 .breadcrumb i {
 	font-size: 15px;

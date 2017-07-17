@@ -1,1 +1,54 @@
 2017-07-14 17:06:49 - PHP Notice:  Undefined variable: text_product_categories in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_footer.tpl on line 15
+2017-07-17 11:19:18 - PHP Notice:  Undefined variable: telephone in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_footer.tpl on line 14
+2017-07-17 11:24:17 - PHP Notice:  Undefined variable: extra_tags in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:24:17 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:24:30 - PHP Notice:  Undefined variable: extra_tags in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:24:30 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:25:23 - PHP Notice:  Undefined variable: extra_tags in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:25:23 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:26:28 - PHP Notice:  Undefined variable: extra_tags in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:26:28 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:26:58 - PHP Notice:  Undefined variable: extra_tags in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:26:58 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:27:01 - PHP Notice:  Undefined variable: extra_tags in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:27:01 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:27:03 - PHP Notice:  Undefined variable: extra_tags in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:27:03 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:27:16 - PHP Notice:  Undefined variable: extra_tags in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:27:16 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:27:33 - PHP Notice:  Undefined variable: extra_tags in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:27:33 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:27:57 - PHP Notice:  Undefined variable: extra_tags in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:27:57 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:28:25 - PHP Notice:  Undefined variable: extra_tags in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:28:25 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:33:09 - PHP Notice:  Undefined variable: extra_tags in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:33:09 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:34:06 - PHP Notice:  Undefined variable: extra_tags in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:34:06 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:47:03 - PHP Notice:  Undefined variable: extra_tags in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 11:59:12 - PHP Notice:  Error: Could not load model C:\xampp\htdocs\e-commerce\kc-cart/catalog/model/catalog/categories.php! in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_engine_loader.php on line 24
+2017-07-17 11:59:12 - PHP Notice:  Error: Could not load model C:\xampp\htdocs\e-commerce\kc-cart/catalog/model/catalog/categories.php! in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_engine_loader.php on line 24
+2017-07-17 11:59:19 - PHP Notice:  Error: Could not load model C:\xampp\htdocs\e-commerce\kc-cart/catalog/model/catalog/categories.php! in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_engine_loader.php on line 24
+2017-07-17 11:59:23 - PHP Notice:  Error: Could not load model C:\xampp\htdocs\e-commerce\kc-cart/catalog/model/catalog/categories.php! in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_engine_loader.php on line 24
+2017-07-17 13:42:41 - PHP Notice:  Error: Could not load model C:\xampp\htdocs\e-commerce\kc-cart/catalog/model/admin/category.php! in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_engine_loader.php on line 24
+2017-07-17 13:43:04 - PHP Notice:  Error: Could not load model C:\xampp\htdocs\e-commerce\kc-cart/catalog/model/../admin/category.php! in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_engine_loader.php on line 24
+2017-07-17 13:44:25 - PHP Notice:  Error: Could not load model C:\xampp\htdocs\e-commerce\kc-cart/catalog/model/admin/category.php! in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_engine_loader.php on line 24
+2017-07-17 13:44:37 - PHP Notice:  Undefined index: start in C:\xampp\htdocs\e-commerce\kc-cart\catalog\model\catalog\category.php on line 43
+2017-07-17 13:44:37 - PHP Notice:  Undefined index: start in C:\xampp\htdocs\e-commerce\kc-cart\catalog\model\catalog\category.php on line 51
+2017-07-17 13:45:35 - PHP Notice:  Undefined index: start in C:\xampp\htdocs\e-commerce\kc-cart\catalog\model\catalog\category.php on line 43
+2017-07-17 13:45:35 - PHP Notice:  Undefined index: start in C:\xampp\htdocs\e-commerce\kc-cart\catalog\model\catalog\category.php on line 51
+2017-07-17 13:45:53 - PHP Notice:  Undefined index: start in C:\xampp\htdocs\e-commerce\kc-cart\catalog\model\catalog\category.php on line 43
+2017-07-17 13:46:57 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_footer.tpl on line 25
+2017-07-17 13:46:57 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_footer.tpl on line 25
+2017-07-17 13:51:17 - PHP Notice:  Undefined variable: informations in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_controller_common_footer.php on line 55
+2017-07-17 14:31:53 - PHP Notice:  Undefined variable: extra_tags in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 14:31:53 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 14:58:01 - PHP Notice:  Undefined variable: extra_tags in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 14:58:01 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 14:58:09 - PHP Notice:  Undefined variable: extra_tags in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 14:58:09 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 14:59:23 - PHP Notice:  Undefined variable: extra_tags in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 14:59:23 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 15:00:07 - PHP Notice:  Undefined variable: extra_tags in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13
+2017-07-17 15:00:07 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 13

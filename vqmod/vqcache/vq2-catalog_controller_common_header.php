@@ -87,6 +87,7 @@ $data['extra_tags'] = $this->document->getExtraTags();
 		$data['contact'] = $this->url->link('information/contact');
 		$data['telephone'] = $this->config->get('config_telephone');
 
+		print_r($data['telephone']); die();
 		$status = true;
 
 		if (isset($this->request->server['HTTP_USER_AGENT'])) {

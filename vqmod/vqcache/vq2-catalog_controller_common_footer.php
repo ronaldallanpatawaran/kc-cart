@@ -25,6 +25,14 @@ if (version_compare(VERSION, '2.0') < 0) {
 		$data['text_parts_services'] = $this->language->get('text_parts_services');
 		$data['text_product_categories'] = $this->language->get('text_product_categories');
 		$data['text_legalities'] = $this->language->get('text_legalities');
+		$data['button_contactus'] = $this->language->get('button_contactus');
+		$data['button_view_products'] = $this->language->get('button_view_products');
+
+		$data['telephone'] = $this->config->get('config_telephone');
+		$data['address'] = $this->config->get('config_address');
+
+		$this->load->model('catalog/category');
+		$data['categories'] = $this->model_catalog_category->getCategoriesWithFilters(array('limit'=> 2, 'start'=> 0));
 
 		$this->load->language('information/contact');
 		$data['text_telephone'] = $this->language->get('text_telephone');
@@ -48,6 +56,7 @@ if (version_compare(VERSION, '2.0') < 0) {
 		}
 
 		$data['contact'] = $this->url->link('information/contact');
+		$data['product'] = $this->url->link('product/category');
 		$data['return'] = $this->url->link('account/return/add', '', 'SSL');
 		$data['sitemap'] = $this->url->link('information/sitemap');
 		$data['manufacturer'] = $this->url->link('product/manufacturer');
@@ -63,6 +72,7 @@ if (version_compare(VERSION, '2.0') < 0) {
 		$data['blog_name'] = $this->language->get('text_blogpage');
 		
 		$data['newsletter'] = $this->url->link('account/newsletter', '', 'SSL');
+
 
 		$data['url_fb'] = $this->config->get('config_fb_url');
 		$data['url_tw'] = $this->config->get('config_tw_url');

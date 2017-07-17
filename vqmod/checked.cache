@@ -144,3 +144,17 @@ admin\model\catalog\information.php
 admin\model\user\api.php
 admin\model\localisation\return_status.php
 admin\model\localisation\zone.php
+catalog\controller\common\header.php
+admin\controller\catalog\category.php
+admin\language\english\catalog\category.php
+admin\model\catalog\category.php
+system\library\pagination.php
+admin\model\catalog\filter.php
+catalog\controller\information\information.php
+catalog\language\english\information\information.php
+catalog\model\catalog\news.php
+catalog\model\catalog\ncategory.php
+catalog\view\theme\default\template\information\information.tpl
+catalog\controller\product\category.php
+catalog\language\english\product\category.php
+catalog\view\theme\default\template\product\category.tpl

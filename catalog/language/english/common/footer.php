@@ -21,3 +21,5 @@ $_['text_powered']      = '&copy; %s %s. All Rights Reserved.';
 $_['text_parts_services'] = 'K-C PARTS & SERVICES';
 $_['text_product_categories'] = 'PRODUCT CATEGORIES';
 $_['text_legalities'] = 'LEGALITIES';
+$_['button_contactus'] = 'Contact Us';
+$_['button_view_products'] = 'View All Products';

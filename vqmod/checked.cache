@@ -254,3 +254,14 @@ admin\model\catalog\manufacturer.php
 admin\model\catalog\attribute.php
 admin\model\catalog\option.php
 admin\model\catalog\download.php
+system\library\mailchimp_integration.php
+catalog\language\english\mail\customer.php
+catalog\model\account\activity.php
+catalog\controller\account\success.php
+catalog\language\english\account\success.php
+catalog\view\theme\default\template\common\success.tpl
+catalog\language\english\account\account.php
+catalog\view\theme\default\template\account\account.tpl
+catalog\controller\account\edit.php
+catalog\language\english\account\edit.php
+catalog\view\theme\default\template\account\edit.tpl

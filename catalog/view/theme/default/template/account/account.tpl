@@ -1,5 +1,6 @@
 <?php echo $header; ?>
 <?php echo $common_banner; ?>
+<div class="container">
   <ul class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
@@ -41,5 +42,6 @@
       </ul>
       <?php echo $content_bottom; ?></div>
     <?php echo $column_right; ?></div>
+</div>
 </div>
 <?php echo $footer; ?>

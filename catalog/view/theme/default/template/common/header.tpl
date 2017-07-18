@@ -66,7 +66,7 @@
             <ul class="nav navbar-nav">
               <li><a href="<?php echo $home; ?>" <?php echo (isset($route) && $route=="common/home") ? 'class="active"' : '' ; ?>><?php echo $text_home; ?></a>
               </li>
-              <li><a href="<?php echo $about; ?>" <?php echo (isset($route) && $route=="information/information&information_id=4") ? 'class="active"' : '' ; ?>><?php echo $text_about; ?></a>
+              <li><a href="<?php echo $about; ?>" <?php echo (isset($route) && $route=="information/information") && isset($_GET['information_id']) && $_GET['information_id'] == 4 ? 'class="active"' : '' ; ?>><?php echo $text_about; ?></a>
               </li>
               <li>
                 <a href="<?php echo $contact; ?>" <?php echo (isset($route) && $route=="information/contact") ? 'class="active"' : '' ; ?>><?php echo $text_contact; ?></a>

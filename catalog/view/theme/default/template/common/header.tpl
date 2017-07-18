@@ -57,7 +57,7 @@
       <div id="menu_col" class="col-md-8">
         <nav id="menu" class="navbar">
           <div id="upper_top_links" class="col-md-12">
-            <label>FOR SALES</label><i class="email"></i> &nbsp; <a href=""><label><?php echo strtoupper('sales@kcparts.com.sg'); ?></label></a> &nbsp; <label>(65)-6254 8022</label>
+            <label>FOR SALES</label>&nbsp;&nbsp;&nbsp;<i class="email"></i> &nbsp; <a href=""><label><?php echo strtoupper('sales@kcparts.com.sg'); ?></label></a>&nbsp; <i class="telephone"></i> &nbsp; <label>(65)-6254 8022</label>
           </div>
           <div class="navbar-header"><span id="category" class="visible-xs"><?php echo $text_menu; ?></span>
             <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>

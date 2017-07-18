@@ -62,7 +62,7 @@ class ControllerCommonFooter extends Controller {
 		$data['order'] = $this->url->link('account/order', '', 'SSL');
 		$data['wishlist'] = $this->url->link('account/wishlist', '', 'SSL');
 		$data['newsletter'] = $this->url->link('account/newsletter', '', 'SSL');
-
+		
 
 		$data['url_fb'] = $this->config->get('config_fb_url');
 		$data['url_tw'] = $this->config->get('config_tw_url');

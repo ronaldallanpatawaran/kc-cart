@@ -31,3 +31,6 @@ define('DB_PASSWORD', '');
 define('DB_DATABASE', 'ecommerce_kcparts');
 define('DB_PORT', '3306');
 define('DB_PREFIX', '');
+
+// GLOBALS
+define('text_banner', 'We’re the guru for <p>&nbsp;</p> <strong>DIESEL ENGINES</strong>');

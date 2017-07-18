@@ -12,7 +12,7 @@ class ControllerAccountAddress extends Controller {
 		$this->load->language('account/address');
 
 		$this->document->setTitle($this->language->get('heading_title'));
-
+		$data['common_banner'] = $this->load->controller('common/common_banner');
 		$this->load->model('account/address');
 
 		$this->getList();

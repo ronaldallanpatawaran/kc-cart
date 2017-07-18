@@ -30,6 +30,8 @@ body {
 }
 .row {
 	width: 100% !important;
+	margin-right: auto !important;
+	margin-left: auto !important;
 }
 
 h1, h2, h3, h4, h5, h6 { color: #444; }
@@ -338,20 +340,120 @@ div.required .control-label:before {
 	min-height: 600px;
 }
 header .container-fluid{
-	max-width: 80%;
+	max-width: 95%;
+	padding-top: 20px;
 }
 #upper_top_links{
 	text-align: right;
 }
 #common_banner{
 	margin-top: 10px;
-	background: url('backgrounds/general/sub-banner.jpg') center center;
+	background: url('backgrounds/general/sub-banner.jpg') center bottom no-repeat;
 	height: 300px;
 }
 #upper_top_links label{
 	color: #184972;
 	font-family: "Gotham Narrow Medium";
 	font-size: 18px;
+}
+#frm_contacts{
+    background-color: #e9e9e9;
+    padding: 15px;
+    height: 600px;
+}
+#contacts_heading{
+	font-size: 30px;
+	font-family: "Gotham Narrow Medium";
+	color: #333333;
+	font-weight: bolder;
+	padding-left: 50px;
+}
+.g-recaptcha > div iframe{
+	width: 100% !important;
+}
+#geo_col iframe{
+    width: 100%;
+    height: 800px;
+}
+#frm_contacts button.btn_yellow{
+    position: relative;
+    top: -24px;
+    left: -45px;
+}
+button#login_button{
+	margin-left: 50px;
+}
+button#btn_continue{
+	margin-top: 20px;
+}
+label{
+	font-size: 16px;
+	font-family: "RobotoRegular";
+
+}
+.right{
+	float: right;
+}
+.login_well.well{
+	min-height: 270px !important;
+}
+.login_labels{
+	font-family: "Gotham Narrow Medium";
+	font-weight: bolder;
+}
+.contacts_title{
+	font-family: "Gotham Narrow Medium";
+	font-weight: bolder;
+	color: #333333;
+	font-size: 24px;
+}
+#text_banner{
+	font-size: 65px;
+    color: #ffffff;
+    position: relative;
+    top: 80px;
+    left: -20px;
+}
+
+input, textarea{
+	color: #333333 !important;
+	font-size: 16px !important;
+}
+
+p{
+	font-size: 16px;
+}
+.container{
+	max-width: 1200px;
+}
+#form_col{
+	padding-top: 50px;
+}
+
+.page-title{
+	font-family: "Gotham Narrow Medium";
+	font-size: 30px;
+	color: #333333;
+	font-weight: bold;
+}
+i.telephone:after{
+	content: url('backgrounds/general/telephone.png');
+}
+i.email:after{
+	content: url('backgrounds/general/email.png');
+}
+.btn-primary{
+	color: #ffffff !important;
+}
+#login_form fieldset{
+	background-color: #eeeeee;
+    padding: 5%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.center{
+	text-align: center;
 }
 
 /* footer */
@@ -403,6 +505,21 @@ button.btn_yellow{
     height: 45px;
     font-weight: bold;
     width: 220px;
+    border: none;
+}
+#login_form input{
+	color: #666666 !important;
+	font-size: 16px !important;
+}
+#input-country{
+	color: #666666;
+	font-size: 16px;
+}
+.control-label{
+	text-align: left !important;
+}
+.text-align-left{
+	text-align: left;
 }
 #footer_logos{
     min-height: 220px;
@@ -908,7 +1025,7 @@ h2.price {
 	    font-family: "RobotoRegular";
 	    height: 45px;
 	    font-weight: bold;
-	    width: 60%;
+	    width: 200px;
 	    margin-bottom: 20px;
 	}
 	#menu {
@@ -939,6 +1056,16 @@ h2.price {
 	}
 	#menu_col{
 		min-height: 50px;
+	}
+	#geo_col iframe{
+	    width: 100%;
+	    height: 400px;
+	}
+	#content {
+	    padding: 0;
+	}
+	.g-recaptcha > div:first-child{
+	    width: 100% !important;
 	}
 }
 

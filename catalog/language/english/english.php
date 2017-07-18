@@ -17,12 +17,11 @@ $_['text_none']             = ' --- None --- ';
 $_['text_select']           = ' --- Please Select --- ';
 $_['text_all_zones']        = 'All Zones';
 $_['text_pagination']       = 'Showing %d to %d of %d (%d Pages)';
-$_['text_loading']          = 'Loading...';
 
 // Buttons
 $_['button_address_add']    = 'Add Address';
 $_['button_back']           = 'Back';
-$_['button_continue']       = 'Continue';
+$_['button_continue']       = 'Sign Up Now';
 $_['button_cart']           = 'Add to Cart';
 $_['button_cancel']         = 'Cancel';
 $_['button_compare']        = 'Compare this Product';

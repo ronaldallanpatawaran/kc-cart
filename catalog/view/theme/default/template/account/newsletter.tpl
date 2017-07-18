@@ -1,5 +1,6 @@
 <?php echo $header; ?>
-<div class="container">
+<?php echo $common_banner; ?>
+<div class="container" style="margin-top: 100px;">
   <ul class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>

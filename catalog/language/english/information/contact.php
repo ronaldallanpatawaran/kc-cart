@@ -1,9 +1,10 @@
 <?php
 // Heading
-$_['heading_title']  = 'Contact Us';
+$_['heading_title']  = 'CONTACTS';
 
 // Text
 $_['text_location']  = 'Our Location';
+$_['text_drop_as_message'] = 'DROP AS A MESSAGE';
 $_['text_store']     = 'Our Stores';
 $_['text_contact']   = 'Contact Form';
 $_['text_address']   = 'Address';
@@ -13,6 +14,7 @@ $_['text_fax']       = 'Fax';
 $_['text_open']      = 'Opening Times';
 $_['text_comment']   = 'Comments';
 $_['text_success']   = '<p>Your enquiry has been successfully sent!</p>';
+$_['text_site_title']= 'K-C Parts & Services (S)';
 
 // Entry
 $_['entry_name']     = 'Your Name';

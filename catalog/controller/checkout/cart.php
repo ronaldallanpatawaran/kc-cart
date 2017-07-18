@@ -228,7 +228,7 @@ class ControllerCheckoutCart extends Controller {
 
 			$data['continue'] = $this->url->link('common/home');
 
-			$data['checkout'] = $this->url->link('checkout/checkout', '', 'SSL');
+			$data['checkout'] = $this->url->link('quickcheckout/checkout', '', 'SSL');
 
 			$this->load->model('extension/extension');
 
@@ -257,10 +257,11 @@ class ControllerCheckoutCart extends Controller {
 
 			$data['button_continue'] = $this->language->get('button_continue');
 
-			$data['continue'] = $this->url->link('common/home');
+			$data['continue'] = $this->url->link('product/category');
 
 			unset($this->session->data['success']);
 
+			$data['common_banner'] = $this->load->controller('common/common_banner');
 			$data['column_left'] = $this->load->controller('common/column_left');
 			$data['column_right'] = $this->load->controller('common/column_right');
 			$data['content_top'] = $this->load->controller('common/content_top');

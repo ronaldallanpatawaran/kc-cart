@@ -72,7 +72,7 @@ if (version_compare(VERSION, '2.0') < 0) {
 		$data['blog_name'] = $this->language->get('text_blogpage');
 		
 		$data['newsletter'] = $this->url->link('account/newsletter', '', 'SSL');
-
+		
 
 		$data['url_fb'] = $this->config->get('config_fb_url');
 		$data['url_tw'] = $this->config->get('config_tw_url');

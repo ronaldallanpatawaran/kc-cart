@@ -265,3 +265,4 @@ catalog\view\theme\default\template\account\account.tpl
 catalog\controller\account\edit.php
 catalog\language\english\account\edit.php
 catalog\view\theme\default\template\account\edit.tpl
+admin\model\catalog\url_alias.php

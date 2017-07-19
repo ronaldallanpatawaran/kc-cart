@@ -30,6 +30,18 @@ class ControllerInformationInformation extends Controller {
 				'href' => $this->url->link('information/information', 'information_id=' .  $information_id)
 			);
 
+			$data['text_profile'] = $this->language->get('text_profile');
+			$data['text_history'] = $this->language->get('text_history');
+			$data['text_mission_and_values'] = $this->language->get('text_mission_and_values');
+
+			$data['profile'] = $this->url->link('information/information&information_id=4');
+			$data['history'] = $this->url->link('information/information&information_id=8');
+			$data['mission_values'] = $this->url->link('information/information&information_id=7');
+
+			$data['profile_active_class'] = isset($_GET['information_id']) && $_GET['information_id'] == 4 ? "active":"";
+			$data['history_active_class'] = isset($_GET['information_id']) && $_GET['information_id'] == 8 ? "active":"";
+			$data['mission_values_active_class'] = isset($_GET['information_id']) && $_GET['information_id'] == 7 ? "active":"";
+
 			$data['heading_title'] = $information_info['title'];
 
 			$data['button_continue'] = $this->language->get('button_continue');

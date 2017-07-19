@@ -421,7 +421,17 @@ label{
     position: relative;
     top: 80px;
     left: -20px;
+    font-family: "Langdon";
     text-shadow: none;
+}
+#home_container, #home_container #content{
+	padding: 0;
+}
+.side_blue{
+    background-color: #0d283f;
+    height: 40px;
+    position: relative;
+    top: 15px;
 }
 
 #text_banner strong{
@@ -496,7 +506,39 @@ i.email:after{
     background-color: #1f609d;
     color: #ffffff;
 }
-
+#text_featured_products{
+	text-align: center;
+	padding: 0;
+}
+#side_blue_wrapper_1{
+	padding: 0 50px 0 0;
+}
+#side_blue_wrapper_2{
+	padding: 0 0 0 50px;
+}
+#text_featured_products h1{
+	font-family: "Gotham Narrow Medium";
+	font-weight: bolder;
+	font-size: 30px;
+}
+.ms-slide-title{
+	display: none !important;
+}
+.ms-slide-desc h1{
+	color: #ffffff;
+	font-size: 62.55px;
+	font-family: "Langdon";
+	position: absolute;
+    left: 10%;
+}
+.ms-slide-desc h1 strong{
+	font-family: "PhosphateSolid";
+	font-size: 69.5px;
+}
+.ms-slide-desc{
+    position: relative;
+    top: 100px;
+}
 
 /* footer */
 footer {

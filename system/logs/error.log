@@ -243,3 +243,34 @@
 2017-07-19 10:33:44 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10
 2017-07-19 10:33:48 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10
 2017-07-19 10:34:11 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10
+2017-07-19 10:47:00 - PHP Warning:  imagecreatetruecolor() expects parameter 2 to be integer, string given in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_library_image.php on line 242
+2017-07-19 10:47:00 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, null given in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_library_image.php on line 251
+2017-07-19 10:47:00 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_library_image.php on line 254
+2017-07-19 10:47:00 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_library_image.php on line 256
+2017-07-19 10:47:00 - PHP Warning:  imagecreatetruecolor() expects parameter 2 to be integer, string given in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_library_image.php on line 242
+2017-07-19 10:47:00 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, null given in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_library_image.php on line 251
+2017-07-19 10:47:00 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_library_image.php on line 254
+2017-07-19 10:47:00 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_library_image.php on line 256
+2017-07-19 10:47:00 - PHP Warning:  imagecreatetruecolor() expects parameter 2 to be integer, string given in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_library_image.php on line 242
+2017-07-19 10:47:00 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, null given in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_library_image.php on line 251
+2017-07-19 10:47:00 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_library_image.php on line 254
+2017-07-19 10:47:00 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_library_image.php on line 256
+2017-07-19 10:47:13 - PHP Warning:  imagecreatetruecolor() expects parameter 2 to be integer, string given in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_library_image.php on line 242
+2017-07-19 10:47:13 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, null given in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_library_image.php on line 251
+2017-07-19 10:47:13 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_library_image.php on line 254
+2017-07-19 10:47:13 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_library_image.php on line 256
+2017-07-19 10:47:13 - PHP Warning:  imagecreatetruecolor() expects parameter 2 to be integer, string given in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_library_image.php on line 242
+2017-07-19 10:47:13 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, null given in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_library_image.php on line 251
+2017-07-19 10:47:13 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_library_image.php on line 254
+2017-07-19 10:47:13 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_library_image.php on line 256
+2017-07-19 10:47:14 - PHP Warning:  imagecreatetruecolor() expects parameter 2 to be integer, string given in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_library_image.php on line 242
+2017-07-19 10:47:14 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, null given in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_library_image.php on line 251
+2017-07-19 10:47:14 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_library_image.php on line 254
+2017-07-19 10:47:14 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in C:\xampp\htdocs\e-commerce\kc-cart\vqmod\vqcache\vq2-system_library_image.php on line 256
+2017-07-19 11:28:51 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\account\register.tpl on line 13
+2017-07-19 11:31:00 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10
+2017-07-19 11:33:36 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10
+2017-07-19 11:34:48 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10
+2017-07-19 11:54:22 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\e-commerce\kc-cart\admin\controller\module\featured.php on line 124
+2017-07-19 11:59:31 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\e-commerce\kc-cart\admin\controller\module\featured.php on line 124
+2017-07-19 15:10:48 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10

@@ -274,3 +274,42 @@
 2017-07-19 11:54:22 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\e-commerce\kc-cart\admin\controller\module\featured.php on line 124
 2017-07-19 11:59:31 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\e-commerce\kc-cart\admin\controller\module\featured.php on line 124
 2017-07-19 15:10:48 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10
+2017-07-20 9:23:16 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\account\register.tpl on line 13
+2017-07-20 9:23:30 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10
+2017-07-20 9:23:33 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10
+2017-07-20 9:23:35 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10
+2017-07-20 9:23:36 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10
+2017-07-20 11:50:19 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10
+2017-07-20 11:50:25 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10
+2017-07-20 11:50:27 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10
+2017-07-20 11:51:06 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10
+2017-07-20 11:52:54 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10
+2017-07-20 11:53:57 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10
+2017-07-20 11:54:31 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10
+2017-07-20 11:54:34 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10
+2017-07-20 11:54:36 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10
+2017-07-20 13:14:50 - PHP Notice:  Undefined variable: common_banner in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\error\not_found.tpl on line 2
+2017-07-20 13:14:59 - PHP Notice:  Undefined variable: common_banner in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\error\not_found.tpl on line 2
+2017-07-20 13:15:18 - PHP Notice:  Undefined variable: common_banner in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\error\not_found.tpl on line 2
+2017-07-20 13:15:21 - PHP Notice:  Undefined variable: common_banner in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\error\not_found.tpl on line 2
+2017-07-20 13:15:56 - PHP Notice:  Undefined variable: common_banner in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\error\not_found.tpl on line 2
+2017-07-20 13:24:31 - PHP Warning:  Illegal string offset 'description' in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\common\home.tpl on line 38
+2017-07-20 13:25:29 - PHP Warning:  Illegal string offset 'description' in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\common\home.tpl on line 38
+2017-07-20 13:25:40 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\common\home.tpl on line 38
+2017-07-20 13:36:20 - PHP Notice:  Undefined variable: base in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\common\home.tpl on line 42
+2017-07-20 13:44:28 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10
+2017-07-20 13:45:41 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10
+2017-07-20 13:48:11 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10
+2017-07-20 13:50:45 - PHP Notice:  Undefined variable: btn_view_details in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\product\category.tpl on line 127
+2017-07-20 13:50:45 - PHP Notice:  Undefined variable: btn_view_details in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\product\category.tpl on line 127
+2017-07-20 13:50:45 - PHP Notice:  Undefined variable: btn_view_details in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\product\category.tpl on line 127
+2017-07-20 13:50:45 - PHP Notice:  Undefined variable: btn_view_details in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\product\category.tpl on line 127
+2017-07-20 13:52:38 - PHP Notice:  Undefined variable: button_view_details in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\product\category.tpl on line 127
+2017-07-20 13:52:38 - PHP Notice:  Undefined variable: button_view_details in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\product\category.tpl on line 127
+2017-07-20 13:52:38 - PHP Notice:  Undefined variable: button_view_details in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\product\category.tpl on line 127
+2017-07-20 13:52:38 - PHP Notice:  Undefined variable: button_view_details in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\product\category.tpl on line 127
+2017-07-20 13:59:37 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\account\register.tpl on line 13
+2017-07-20 14:28:50 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10
+2017-07-20 15:24:29 - PHP Notice:  Undefined variable: class in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\information\information.tpl on line 10
+2017-07-20 15:24:38 - PHP Notice:  Undefined variable: common_banner in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\checkout\cart.tpl on line 2
+2017-07-20 15:59:14 - PHP Notice:  Undefined variable: common_banner in C:\xampp\htdocs\e-commerce\kc-cart\catalog\view\theme\default\template\quickcheckout\checkout.tpl on line 2

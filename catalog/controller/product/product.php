@@ -322,6 +322,7 @@ class ControllerProductProduct extends Controller {
 			$data['entry_good'] = $this->language->get('entry_good');
 			$data['entry_bad'] = $this->language->get('entry_bad');
 
+			$data['button_view_details'] = $this->language->get('button_view_details');
 			$data['button_cart'] = $this->language->get('button_cart');
 			$data['button_wishlist'] = $this->language->get('button_wishlist');
 			$data['button_compare'] = $this->language->get('button_compare');
@@ -538,6 +539,7 @@ class ControllerProductProduct extends Controller {
 				$data['site_key'] = '';
 			}
 
+			$data['common_banner'] = $this->load->controller('common/common_banner');
 			$data['column_left'] = $this->load->controller('common/column_left');
 			$data['column_right'] = $this->load->controller('common/column_right');
 			$data['content_top'] = $this->load->controller('common/content_top');

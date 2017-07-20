@@ -7,11 +7,15 @@ class ControllerCommonHome extends Controller {
 		$this->load->language('common/home');
 
 		$data['text_featured_products'] = $this->language->get('text_featured_products');
-
+		$data['text_parts_services'] = $this->language->get('text_parts_services');
 		if (isset($this->request->get['route'])) {
 			$this->document->addLink(HTTP_SERVER, 'canonical');
 		}
 
+		$this->load->model('catalog/information');
+
+		$data['html_parts_services'] = $this->model_catalog_information->getInformation(9);
+			
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['column_right'] = $this->load->controller('common/column_right');
 		$data['content_top'] = $this->load->controller('common/content_top');

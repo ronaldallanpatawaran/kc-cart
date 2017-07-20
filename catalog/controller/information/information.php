@@ -1,5 +1,6 @@
 <?php
 class ControllerInformationInformation extends Controller {
+
 	public function index() {
 		$this->load->language('information/information');
 

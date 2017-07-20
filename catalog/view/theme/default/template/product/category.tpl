@@ -1,4 +1,5 @@
 <?php echo $header; ?>
+<?php echo $common_banner; ?>
 <div class="container">
   <ul class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
@@ -14,7 +15,8 @@
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
-      <h2><?php echo $heading_title; ?></h2>
+      <center><h2 class="page-title"><?php echo strtoupper($heading_title); ?></h2></center>
+      <br><br>
       <?php if ($thumb || $description) { ?>
       <div class="row">
         <?php if ($thumb) { ?>
@@ -26,35 +28,38 @@
       </div>
       <hr>
       <?php } ?>
-      <?php if ($categories) { ?>
-      <h3><?php echo $text_refine; ?></h3>
-      <?php if (count($categories) <= 5) { ?>
-      <div class="row">
-        <div class="col-sm-3">
-          <ul>
-            <?php foreach ($categories as $category) { ?>
-            <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
-            <?php } ?>
-          </ul>
+      <div id="catalog_product_category" class="col-md-3">
+        <?php if ($categories) { ?>
+        <h3 style="font-size: 24px;" class="page-title"><?php echo $text_refine; ?></h3>
+        <?php if (count($categories) <= 5) { ?>
+        <div class="row">
+          <div class="col-sm-12">
+            <ul>
+              <?php foreach ($categories as $category) { ?>
+              <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
+              <?php } ?>
+            </ul>
+          </div>
         </div>
-      </div>
-      <?php } else { ?>
-      <div class="row">
-        <?php foreach (array_chunk($categories, ceil(count($categories) / 4)) as $categories) { ?>
-        <div class="col-sm-3">
-          <ul>
-            <?php foreach ($categories as $category) { ?>
-            <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
-            <?php } ?>
-          </ul>
+        <?php } else { ?>
+        <div class="row">
+          <?php foreach (array_chunk($categories, ceil(count($categories) / 4)) as $categories) { ?>
+          <div class="col-sm-12">
+            <ul>
+              <?php foreach ($categories as $category) { ?>
+              <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
+              <?php } ?>
+            </ul>
+          </div>
+          <?php } ?>
         </div>
         <?php } ?>
+        <?php } ?>
       </div>
-      <?php } ?>
-      <?php } ?>
+      <div class="col-md-9">
       <?php if ($products) { ?>
-      <p><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></p>
-      <div class="row">
+      <p class="hidden"><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></p>
+      <div class="hidden row">
         <div class="col-md-4">
           <div class="btn-group hidden-xs">
             <button type="button" id="list-view" class="btn btn-default" data-toggle="tooltip" title="<?php echo $button_list; ?>"><i class="fa fa-th-list"></i></button>
@@ -95,10 +100,10 @@
         <?php foreach ($products as $product) { ?>
         <div class="product-layout product-list col-xs-12">
           <div class="product-thumb">
+            <center><h4><?php echo $product['name']; ?></h4></center>
             <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
             <div>
               <div class="caption">
-                <h4><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
                 <p><?php echo $product['description']; ?></p>
                 <?php if ($product['rating']) { ?>
                 <div class="rating">
@@ -124,6 +129,7 @@
                 </p>
                 <?php } ?>
               </div>
+              <center><a href="<?php echo $product['href']; ?>"><button class="btn_yellow"><?php echo $button_view_details; ?></button></a></center>
               <div class="button-group">
                 <button type="button" onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $button_cart; ?></span></button>
                 <button type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-heart"></i></button>
@@ -139,6 +145,8 @@
         <div class="col-sm-6 text-right"><?php echo $results; ?></div>
       </div>
       <?php } ?>
+
+      </div>
       <?php if (!$categories && !$products) { ?>
       <p><?php echo $text_empty; ?></p>
       <div class="buttons">

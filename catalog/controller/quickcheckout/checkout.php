@@ -207,6 +207,7 @@ class ControllerQuickCheckoutCheckout extends Controller {
 		$data['login_module'] = $this->config->get('quickcheckout_login_module');
 		$data['countdown'] = $this->config->get('quickcheckout_countdown');
 		
+		$data['common_banner'] = $this->load->controller('common/common_banner');
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['column_right'] = $this->load->controller('common/column_right');
 		$data['content_top'] = $this->load->controller('common/content_top');

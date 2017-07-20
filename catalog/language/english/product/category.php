@@ -1,6 +1,6 @@
 <?php
 // Text
-$_['text_refine']       = 'Refine Search';
+$_['text_refine']       = 'CATEGORIES';
 $_['text_product']      = 'Products';
 $_['text_error']        = 'Category not found!';
 $_['text_empty']        = 'There are no products to list in this category.';
@@ -22,3 +22,4 @@ $_['text_rating_desc']  = 'Rating (Highest)';
 $_['text_model_asc']    = 'Model (A - Z)';
 $_['text_model_desc']   = 'Model (Z - A)';
 $_['text_limit']        = 'Show:';
+$_['button_view_details'] = 'View Details';

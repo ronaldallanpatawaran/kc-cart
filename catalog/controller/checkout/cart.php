@@ -20,10 +20,12 @@ class ControllerCheckoutCart extends Controller {
 		if ($this->cart->hasProducts() || !empty($this->session->data['vouchers'])) {
 			$data['heading_title'] = $this->language->get('heading_title');
 
+
 			$data['text_recurring_item'] = $this->language->get('text_recurring_item');
 			$data['text_next'] = $this->language->get('text_next');
 			$data['text_next_choice'] = $this->language->get('text_next_choice');
 
+			$data['column_action'] = $this->language->get('column_action');
 			$data['column_image'] = $this->language->get('column_image');
 			$data['column_name'] = $this->language->get('column_name');
 			$data['column_model'] = $this->language->get('column_model');
@@ -234,6 +236,7 @@ class ControllerCheckoutCart extends Controller {
 
 			$data['checkout_buttons'] = array();
 
+			$data['common_banner'] = $this->load->controller('common/common_banner');
 			$data['coupon'] = $this->load->controller('checkout/coupon');
 			$data['voucher'] = $this->load->controller('checkout/voucher');
 			$data['reward'] = $this->load->controller('checkout/reward');

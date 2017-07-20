@@ -11,6 +11,7 @@ class ControllerModuleFeatured extends Controller {
 
 		$data['text_tax'] = $this->language->get('text_tax');
 
+		$data['btn_view_details'] = $this->language->get('btn_view_details');
 		$data['button_cart'] = $this->language->get('button_cart');
 		$data['button_wishlist'] = $this->language->get('button_wishlist');
 		$data['button_compare'] = $this->language->get('button_compare');

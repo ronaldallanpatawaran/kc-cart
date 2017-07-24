@@ -41,7 +41,7 @@
                   <?php 
                     if(isset($categories)): 
                       foreach ($categories as $category) {
-                        echo "<span>" . $category['name'] . "</span>";
+                        echo "<a href='".$product_category."'><span>" . $category['name'] . "</span></a>";
                         echo "<br>";
                       }
 

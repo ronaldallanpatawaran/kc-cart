@@ -7,37 +7,74 @@
     <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
     <?php } ?>
   </ul>
-  <div class="row"><?php echo $column_left; ?>
-    <?php if ($column_left && $column_right) { ?>
-    <?php $class = 'col-sm-6'; ?>
-    <?php } elseif ($column_left || $column_right) { ?>
-    <?php $class = 'col-sm-9'; ?>
-    <?php } else { ?>
-    <?php $class = 'col-sm-12'; ?>
-    <?php } ?>
-    <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
+  <div class="row">
+    <div id="content" class="<?php echo $class; ?>">
       <div class="row">
-        <?php if ($column_left && $column_right) { ?>
-        <?php $class = 'col-sm-6'; ?>
-        <?php } elseif ($column_left || $column_right) { ?>
-        <?php $class = 'col-sm-6'; ?>
+        <div id="catalog_product_category" class="col-md-3">
+        <?php if ($categories) { ?>
+        <a href="<?php echo $category_all_link; ?>"><h3 title="See all categories?" style="font-size: 24px;" class="page-title"><?php echo $text_refine; ?></h3></a>
+        <?php if (count($categories) <= 5) { ?>
+        <div class="row">
+          <div class="col-sm-12">
+            <ul class="category">
+              <?php foreach ($categories as $category) {  ?>
+              <li data-toggle="collapse" data-target="#demo<?php echo $category['category_id']; ?>" class="collapsed" category-id="<?php echo $category['category_id']; ?>">
+                <?php echo $category['name']; ?>
+              </li>
+              <div category_id="<?php echo $category['category_id']; ?>" style="padding-left: 30px; cursor: pointer;" data-toggle="collapse" data-target="#demo_sub<?php echo $category['category_id']; ?>" id="demo<?php echo $category['category_id']; ?>" class="sub_category collapse">
+                <?php echo $category['child']; ?>
+                <div style="padding-left: 30px; cursor: pointer;" class="collapse" id="demo_sub<?php echo $category['category_id']; ?>">
+                </div>
+              </div>
+
+              <?php } ?>
+            </ul>
+          </div>
+        </div>
         <?php } else { ?>
-        <?php $class = 'col-sm-8'; ?>
+        <div class="row">
+          <?php foreach (array_chunk($categories, ceil(count($categories) / 4)) as $categories) { ?>
+          <div class="col-sm-12">
+            <ul class="category">
+              <?php foreach ($categories as $category) { ?>
+              <li data-toggle="collapse" data-target="#demo<?php echo $category['category_id']; ?>" class="collapsed" category-id="<?php echo $category['category_id']; ?>">
+                <?php echo $category['name']; ?>
+              </li>
+              <div category_id="<?php echo $category['category_id']; ?>" style="padding-left: 30px; cursor: pointer;" data-toggle="collapse" data-target="#demo_sub<?php echo $category['category_id']; ?>" id="demo<?php echo $category['category_id']; ?>" class="sub_category collapse">
+                <?php echo $category['child']; ?>
+                <div style="padding-left: 30px; cursor: pointer;" class="collapse" id="demo_sub<?php echo $category['category_id']; ?>">
+
+                </div>
+              </div>
+              <?php } ?>
+            </ul>
+          </div>
+          <?php } ?>
+        </div>
         <?php } ?>
-        <div class="<?php echo $class; ?>">
+        <?php } ?>
+      </div>
+      <div class="col-md-9">
+        <div class="row">
+          <div class="col-md-12">
+            <center><h1 class="heading_title"><?php echo $heading_title; ?></h1></center>
+          </div>
+        </div>
+        <div class="row">
+        <div class="col-md-6">
           <?php if ($thumb || $images) { ?>
           <ul class="thumbnails">
             <?php if ($thumb) { ?>
-            <li><a class="thumbnail" href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>"><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></li>
+            <li><a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>"><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></li>
             <?php } ?>
             <?php if ($images) { ?>
             <?php foreach ($images as $image) { ?>
-            <li class="image-additional"><a class="thumbnail" href="<?php echo $image['popup']; ?>" title="<?php echo $heading_title; ?>"> <img src="<?php echo $image['thumb']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></li>
+            <li class="image-additional"><a href="<?php echo $image['popup']; ?>" title="<?php echo $heading_title; ?>"> <img src="<?php echo $image['thumb']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></li>
             <?php } ?>
             <?php } ?>
           </ul>
           <?php } ?>
-          <ul class="nav nav-tabs">
+          <ul style="display: none;" class="nav nav-tabs">
             <li class="active"><a href="#tab-description" data-toggle="tab"><?php echo $tab_description; ?></a></li>
             <?php if ($attribute_groups) { ?>
             <li><a href="#tab-specification" data-toggle="tab"><?php echo $tab_attribute; ?></a></li>
@@ -46,7 +83,7 @@
             <li><a href="#tab-review" data-toggle="tab"><?php echo $tab_review; ?></a></li>
             <?php } ?>
           </ul>
-          <div class="tab-content">
+          <div style="display: none;" class="tab-content">
             <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
             <?php if ($attribute_groups) { ?>
             <div class="tab-pane" id="tab-specification">
@@ -123,23 +160,19 @@
             <?php } ?>
           </div>
         </div>
-        <?php if ($column_left && $column_right) { ?>
-        <?php $class = 'col-sm-6'; ?>
-        <?php } elseif ($column_left || $column_right) { ?>
-        <?php $class = 'col-sm-6'; ?>
-        <?php } else { ?>
-        <?php $class = 'col-sm-4'; ?>
-        <?php } ?>
-        <div class="<?php echo $class; ?>">
-          <div class="btn-group">
+        <div class="col-md-6">
+          <div style="display: none;" class="btn-group">
             <button type="button" data-toggle="tooltip" class="btn btn-default" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product_id; ?>');"><i class="fa fa-heart"></i></button>
             <button type="button" data-toggle="tooltip" class="btn btn-default" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product_id; ?>');"><i class="fa fa-exchange"></i></button>
           </div>
-          <h1><?php echo $heading_title; ?></h1>
           <ul class="list-unstyled">
             <?php if ($manufacturer) { ?>
             <li><?php echo $text_manufacturer; ?> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a></li>
             <?php } ?>
+            <li>
+              <h3 class="tab_titles"><?php echo $tab_description; ?></h3 id="tab_description">
+              <?php echo $description; ?>  
+            </li>
             <li><?php echo $text_model; ?> <?php echo $model; ?></li>
             <?php if ($reward) { ?>
             <li><?php echo $text_reward; ?> <?php echo $reward; ?></li>
@@ -149,8 +182,8 @@
           <?php if ($price) { ?>
           <ul class="list-unstyled">
             <?php if (!$special) { ?>
-            <li>
-              <h2><?php echo $price; ?></h2>
+            <li class="price_wrapper">
+              <h2 class="price">S<?php echo $price; ?></h2>
             </li>
             <?php } else { ?>
             <li><span style="text-decoration: line-through;"><?php echo $price; ?></span></li>
@@ -313,11 +346,19 @@
             </div>
             <?php } ?>
             <div class="form-group">
-              <label class="control-label" for="input-quantity"><?php echo $entry_qty; ?></label>
-              <input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity" class="form-control" />
-              <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
-              <br />
-              <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary btn-lg btn-block"><?php echo $button_cart; ?></button>
+              <div class="row">
+                <div class="col-md-3">
+                  <label class="tab_titles control-label" for="input-quantity"><?php echo $entry_qty; ?></label>
+                </div>
+                <div class="col-md-4">
+                  <input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity" class="form-control" />
+                  <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+                  <br />
+                </div>
+                <div class="col-md-5" style="padding: 0px;">
+                  <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary btn-lg btn-block"><?php echo $button_cart; ?></button>
+                </div>
+              </div>
             </div>
             <?php if ($minimum > 1) { ?>
             <div class="alert alert-info"><i class="fa fa-info-circle"></i> <?php echo $text_minimum; ?></div>
@@ -341,6 +382,8 @@
             <!-- AddThis Button END -->
           </div>
           <?php } ?>
+        </div>      
+        </div> 
         </div>
       </div>
       <?php if ($products) { ?>

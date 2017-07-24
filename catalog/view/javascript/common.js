@@ -26,7 +26,6 @@ $(document).ready(function() {
 
 	$(document).on('click', '.sub_category span', function(e){
 		e.preventDefault();
-		alert('test');
 		var $this = $(this);
 		var $class = $(this).attr('class');
 		var category_id = $(this).attr('category_id');
@@ -38,15 +37,21 @@ $(document).ready(function() {
 			method: 'post',
 			beforeSend:function(e){
 
-			},
+			},	
 			success: function(e){
 				$this.closest('.category').find('#demo_sub'+parent_id).empty().html(e);
-			},
+			}
 
 		});
-
-
 		
+	});
+
+	$(document).on('click', '.sub_category div a', function(e){
+		var $this = $(this);
+		var url = $this.attr('href');
+		e.preventDefault();
+		
+		window.location.href = url;
 	});
 
 
@@ -66,12 +71,12 @@ $(document).ready(function() {
 		var element = $(this).parent().parent();
 		
 		if (element.hasClass('form-group')) {
-			element.addClass('has-error');
+			element.addClass('has-error')	;
 		}
 	});
 		
 	// Currency
-	$('#currency .currency-select').on('click', function(e) {
+	$('#currency .currency-select').on('click', function(e){
 		e.preventDefault();
 
 		$('#currency input[name=\'code\']').attr('value', $(this).attr('name'));

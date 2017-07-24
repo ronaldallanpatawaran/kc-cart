@@ -82,6 +82,7 @@ class ControllerProductProduct extends Controller {
 				$product_id = $this->request->get['product_id'];
 				$categories = $this->model_catalog_product->getCategories(0);
 
+
 				if ($categories) {
 
 					$last_category = array_pop($categories);
@@ -298,6 +299,7 @@ class ControllerProductProduct extends Controller {
 
 			$data['heading_title'] = $product_info['name'];
 
+			$data['text_refine'] = $this->language->get('text_refine');
 			$data['text_select'] = $this->language->get('text_select');
 			$data['text_manufacturer'] = $this->language->get('text_manufacturer');
 			$data['text_model'] = $this->language->get('text_model');
@@ -464,6 +466,37 @@ class ControllerProductProduct extends Controller {
 			$data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
 			$data['attribute_groups'] = $this->model_catalog_product->getProductAttributes($this->request->get['product_id']);
 
+
+			$data['categories'] = array();
+
+			$results = $this->model_catalog_category->getCategories(0);
+			$category_id = 0;
+			foreach ($results as $result) {
+				$filter_data = array(
+					'filter_category_id'  => $result['category_id'],
+					'filter_sub_category' => true
+				);
+
+				if($category_id != 0) {
+					$data['categories'][] = array(
+						'name'  => $result['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
+						'category_id' => $result['category_id'],
+						'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url),
+						'child' => $this->getChildCategories($result['category_id'])
+					);
+				} else {
+					$data['categories'][] = array(
+						'name'  => $result['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
+						'category_id' => $result['category_id'],
+						'href'  => $this->url->link('product/category', 'path=' . $result['category_id'] . $url),
+						'child' => $this->getChildCategories($result['category_id'])
+					);
+				}
+
+
+
+			}
+
 			$data['products'] = array();
 
 			$results = $this->model_catalog_product->getProductRelated($this->request->get['product_id']);
@@ -539,7 +572,6 @@ class ControllerProductProduct extends Controller {
 				$data['site_key'] = '';
 			}
 
-			$data['categories'] = $this->load->controller('common/category');
 			$data['common_banner'] = $this->load->controller('common/common_banner');
 			$data['column_left'] = $this->load->controller('common/column_left');
 			$data['column_right'] = $this->load->controller('common/column_right');
@@ -785,5 +817,23 @@ class ControllerProductProduct extends Controller {
 
 		$this->response->addHeader('Content-Type: application/json');
 		$this->response->setOutput(json_encode($json));
+	}
+
+	public function getChildCategories($parent_id){
+		$this->load->language('product/category');
+		$this->load->model('catalog/category');
+		$this->load->model('catalog/product');
+		$this->load->model('tool/image');
+
+
+		$subCategories = $this->model_catalog_category->getCategories($parent_id);
+
+		$html = "";
+		foreach ($subCategories as $category) {
+			$category['href'] = $this->url->link('product/category', 'path=' . $category['category_id']);
+			$html .= "<span category_id='".$category['category_id']."'>".$category['name']."</span><br>";
+		}
+
+		return $html;
 	}
 }

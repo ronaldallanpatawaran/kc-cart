@@ -107,6 +107,8 @@ class ControllerProductCategory extends Controller {
 				$data['heading_title'] = $this->language->get('text_product');
 			}
 
+			$data['category_all_link'] = $this->url->link('product/category');
+
 			$data['text_refine'] = $this->language->get('text_refine');
 			$data['text_empty'] = $this->language->get('text_empty');
 			$data['text_quantity'] = $this->language->get('text_quantity');

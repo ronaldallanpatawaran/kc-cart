@@ -29,6 +29,8 @@ class ControllerCommonFooter extends Controller {
 		$this->load->model('catalog/category');
 		$data['categories'] = $this->model_catalog_category->getCategoriesWithFilters(array('limit'=> 2, 'start'=> 0));
 
+		$data['product_category'] = $this->url->link('product/category');
+
 		$this->load->language('information/contact');
 		$data['text_telephone'] = $this->language->get('text_telephone');
 		$data['text_address'] = $this->language->get('text_address');

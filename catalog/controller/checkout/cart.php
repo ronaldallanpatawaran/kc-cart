@@ -228,7 +228,7 @@ class ControllerCheckoutCart extends Controller {
 				);
 			}
 
-			$data['continue'] = $this->url->link('common/home');
+			$data['continue'] = $this->url->link('product/category');
 
 			$data['checkout'] = $this->url->link('quickcheckout/checkout', '', 'SSL');
 

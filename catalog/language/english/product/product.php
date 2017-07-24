@@ -31,9 +31,10 @@ $_['text_week']                = 'week';
 $_['text_semi_month']          = 'half-month';
 $_['text_month']               = 'month';
 $_['text_year']                = 'year';
+$_['text_refine']			   = 'Categories';
 
 // Entry
-$_['entry_qty']                = 'Qty';
+$_['entry_qty']                = 'Quantity';
 $_['entry_name']               = 'Your Name';
 $_['entry_review']             = 'Your Review';
 $_['entry_rating']             = 'Rating';

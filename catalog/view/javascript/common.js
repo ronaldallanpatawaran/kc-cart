@@ -23,6 +23,33 @@ function getURLVar(key) {
 }
 
 $(document).ready(function() {
+
+	$(document).on('click', '.sub_category span', function(e){
+		e.preventDefault();
+		alert('test');
+		var $this = $(this);
+		var $class = $(this).attr('class');
+		var category_id = $(this).attr('category_id');
+		var parent_id = $(this).parent().attr('category_id');
+		$.ajax({
+			url: 'index.php?route=product/category/getChildCategories_ajax/',
+			data: {category_id:category_id},
+			dataType : 'html',
+			method: 'post',
+			beforeSend:function(e){
+
+			},
+			success: function(e){
+				$this.closest('.category').find('#demo_sub'+parent_id).empty().html(e);
+			},
+
+		});
+
+
+		
+	});
+
+
 	// Adding the clear Fix
 	cols1 = $('#column-right, #column-left').length;
 	

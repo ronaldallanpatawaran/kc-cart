@@ -80,7 +80,7 @@ class ControllerProductProduct extends Controller {
 		} else {
 			if (isset($this->request->get['product_id'])) {
 				$product_id = $this->request->get['product_id'];
-				$categories = $this->model_catalog_product->getCategories($product_id);
+				$categories = $this->model_catalog_product->getCategories(0);
 
 				if ($categories) {
 
@@ -539,6 +539,7 @@ class ControllerProductProduct extends Controller {
 				$data['site_key'] = '';
 			}
 
+			$data['categories'] = $this->load->controller('common/category');
 			$data['common_banner'] = $this->load->controller('common/common_banner');
 			$data['column_left'] = $this->load->controller('common/column_left');
 			$data['column_right'] = $this->load->controller('common/column_right');
@@ -620,6 +621,7 @@ class ControllerProductProduct extends Controller {
 
 			$this->response->addHeader($this->request->server['SERVER_PROTOCOL'] . ' 404 Not Found');
 
+			$data['common_banner'] = $this->load->controller('common/common_banner');
 			$data['column_left'] = $this->load->controller('common/column_left');
 			$data['column_right'] = $this->load->controller('common/column_right');
 			$data['content_top'] = $this->load->controller('common/content_top');

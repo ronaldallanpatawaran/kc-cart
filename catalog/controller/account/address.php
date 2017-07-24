@@ -246,6 +246,7 @@ class ControllerAccountAddress extends Controller {
 		$data['add'] = $this->url->link('account/address/add', '', 'SSL');
 		$data['back'] = $this->url->link('account/account', '', 'SSL');
 
+		$data['common_banner'] = $this->load->controller('common/common_banner');
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['column_right'] = $this->load->controller('common/column_right');
 		$data['content_top'] = $this->load->controller('common/content_top');

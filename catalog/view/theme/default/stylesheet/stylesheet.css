@@ -344,6 +344,20 @@ div.required .control-label:before {
 	}
 }
 /* content */
+.quickcheckout-heading{
+	background: #ffffff !important;
+	font-family: "Gotham Narrow Medium";
+	font-weight: bold;
+	text-shadow: none;
+	font-size: 	16px !important;
+	color: 	#666666 !important;
+}
+table.quickcheckout-cart{
+	border: 0px !important;
+}
+.quickcheckout-content{
+	border: 0px !important;
+}
 .actions{
 	cursor: pointer;
 }
@@ -352,10 +366,26 @@ div.required .control-label:before {
 	margin: 0;
 	padding: 0;
 }
-#catalog_product_category ul li a{
+#catalog_product_category ul.category > li.collapsed{
+	background: url('backgrounds/product/Polygon-1 copy.png') right	top no-repeat;
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+    cursor: pointer;
+}
+#catalog_product_category ul.category > li{
+	background: url('backgrounds/product/Polygon-1.png') right	top no-repeat;
+}
+#catalog_product_category ul > li{
 	color: #0750a4;
 	font-size: 16px;
 	font-weight: bold;
+}
+#catalog_product_category .sub_category{
+	padding-left: 10px;
+}
+#catalog_product_category .sub_category ul{ 
+	padding-left: 10px;
 }
 #parts_services_row p{
 	line-height: 31px;
@@ -637,16 +667,34 @@ footer label{
 	text-align: center;
     height: 100px;
 }
-button.btn_yellow{
-	background-color: #fdb813;
-    color: #1d2b5e;
+.catalog_accounts li{
+    height: 35px;
+    padding-top: 10px;
+    background-color: #0750a4;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    border-radius: 5px;
+}
+.catalog_accounts li a{
+	color: #ffffff;
+}
+.catalog_accounts_label{
+	color: #333333;
+	font-size: 18px;
+}
+button.btn_yellow, #button-payment-method, #button-login{
+	background-color: #fdb813 !important;
+    color: #1d2b5e !important;
     border-color: #fdb813;
-    font-size: 18px;
+    font-size: 18px !important;
+    border-color: #fdb813 #fdb813 #fdb813 !important;
     font-family: "RobotoRegular";
+    background-image: none !important;
     height: 45px;
     font-weight: bold;
     width: 220px;
     border: none;
+    border-radius: 	0	px;
 }
 #login_form input{
 	color: #666666 !important;
@@ -898,7 +946,7 @@ footer .socials a i { vertical-align: middle; font-size: 20px; }
 	border: 0px solid #ddd;
 	margin-bottom: 20px;
 	overflow: auto;
-    max-height: 370px;
+    height: 400px;
     color: #666666;
 }
 .product-thumb .image {

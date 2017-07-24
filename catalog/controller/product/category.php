@@ -167,7 +167,7 @@ class ControllerProductCategory extends Controller {
 
 			$data['categories'] = array();
 
-			$results = $this->model_catalog_category->getCategories($category_id);
+			$results = $this->model_catalog_category->getCategories(0);
 
 			foreach ($results as $result) {
 				$filter_data = array(
@@ -178,14 +178,19 @@ class ControllerProductCategory extends Controller {
 				if($category_id != 0) {
 					$data['categories'][] = array(
 						'name'  => $result['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
-						'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
+						'category_id' => $result['category_id'],
+						'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url),
+						'child' => $this->getChildCategories($result['category_id'])
 					);
 				} else {
 					$data['categories'][] = array(
 						'name'  => $result['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
-						'href'  => $this->url->link('product/category', 'path=' . $result['category_id'] . $url)
+						'category_id' => $result['category_id'],
+						'href'  => $this->url->link('product/category', 'path=' . $result['category_id'] . $url),
+						'child' => $this->getChildCategories($result['category_id'])
 					);
 				}
+
 
 			}
 
@@ -535,4 +540,42 @@ class ControllerProductCategory extends Controller {
 			}
 		}
 	}
+
+	public function getChildCategories($parent_id){
+		$this->load->language('product/category');
+		$this->load->model('catalog/category');
+		$this->load->model('catalog/product');
+		$this->load->model('tool/image');
+
+
+		$subCategories = $this->model_catalog_category->getCategories($parent_id);
+
+		$html = "";
+		foreach ($subCategories as $category) {
+			$category['href'] = $this->url->link('product/category', 'path=' . $category['category_id']);
+			$html .= "<span category_id='".$category['category_id']."'>".$category['name']."</span><br>";
+		}
+
+		return $html;
+	}
+
+	public function getChildCategories_ajax($parent_id){
+		$this->load->language('product/category');
+		$this->load->model('catalog/category');
+		$this->load->model('catalog/product');
+		$this->load->model('tool/image');
+		
+		
+		$subCategories = $this->model_catalog_category->getCategories($_POST['category_id']);
+
+		$html = "";
+		foreach ($subCategories as $category) {
+			$category['href'] = $this->url->link('product/category', 'path=' . $category['category_id']);
+			$html .= "<a href='".$category['href']."'><span category_id='".$category['category_id']."'>".$category['name']."</span></a><br>";
+		}
+
+		echo $html;
+	}
 }
+
+

@@ -40,7 +40,7 @@
 	  <?php if (!$logged && $login_module) { ?>
 	  <div class="quickcheckoutmid" id="login-box">
 		<div id="checkout">
-		  <div class="quickcheckout-heading"><i class="fa fa-sign-in"></i> <?php echo $text_checkout_option; ?></div>
+		  <div class="quickcheckout-heading"><?php echo $text_checkout_option; ?></div>
 		  <div class="quickcheckout-content"></div>
 		</div>
 		<div class="or"><?php echo $text_or; ?></div>
@@ -49,18 +49,18 @@
 	  <div class="quickcheckoutleft">
 		<?php if (!$logged) { ?>
 		<div id="payment-address">
-		  <div class="quickcheckout-heading"><i class="fa fa-user"></i> <?php echo $text_checkout_account; ?></div>
+		  <div class="quickcheckout-heading"><?php echo $text_checkout_account; ?></div>
 		  <div class="quickcheckout-content"></div>
 		</div>
 		<?php } else { ?>
 		<div id="payment-address">
-		  <div class="quickcheckout-heading"><i class="fa fa-user"></i> <?php echo $text_checkout_payment_address; ?></div>
+		  <div class="quickcheckout-heading"><?php echo $text_checkout_payment_address; ?></div>
 		  <div class="quickcheckout-content"></div>
 		</div>
 		<?php } ?>
 		<?php if ($shipping_required) { ?>
 		<div id="shipping-address">
-		  <div class="quickcheckout-heading"><i class="fa fa-user"></i> <?php echo $text_checkout_shipping_address; ?></div>
+		  <div class="quickcheckout-heading"><?php echo $text_checkout_shipping_address; ?></div>
 		  <div class="quickcheckout-content"></div>
 		</div>
 		<?php } ?>
@@ -72,7 +72,7 @@
 		<?php } else { ?>
 		<div id="shipping-method" style="display:none;">
 		<?php } ?>
-		  <div class="quickcheckout-heading"><i class="fa fa-truck"></i> <?php echo $text_checkout_shipping_method; ?></div>
+		  <div class="quickcheckout-heading"><?php echo $text_checkout_shipping_method; ?></div>
 		  <div class="quickcheckout-content"></div>
 		</div>
 		<?php } ?>
@@ -81,7 +81,7 @@
 		<?php } else { ?>
 		<div id="payment-method" style="display:none;">
 		<?php } ?>
-		  <div class="quickcheckout-heading"><i class="fa fa-credit-card"></i> <?php echo $text_checkout_payment_method; ?></div>
+		  <div class="quickcheckout-heading"> <?php echo $text_checkout_payment_method; ?></div>
 		  <div class="quickcheckout-content"></div>
 		</div>
 	  </div>

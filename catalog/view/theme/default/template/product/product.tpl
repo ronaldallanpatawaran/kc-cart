@@ -1,4 +1,6 @@
 <?php echo $header; ?>
+<?php echo $common_banner; ?>
+<br><br>
 <div class="container">
   <ul class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>

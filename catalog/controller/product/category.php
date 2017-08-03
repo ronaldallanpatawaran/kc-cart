@@ -242,18 +242,29 @@ class ControllerProductCategory extends Controller {
 					$rating = false;
 				}
 
+				$href = "";
+				$path = isset($_GET['path']) && $_GET['path'] != "" ? $_GET['path'] : "";
+				if((int)$result['quantity']<1){
+					$href = $this->url->link('information/contact', 'product=' . $result['name']);
+					$button_text = $this->language->get('button_view_enquiry');
+				}else{
+					$href = $this->url->link('product/product', 'path=' . $path . '&product_id=' . $result['product_id'] . $url);
+					$button_text = $this->language->get('button_view_details');
+				}
+
 				if($category_id != 0) {
 					$data['products'][] = array(
 						'product_id'  => $result['product_id'],
 						'thumb'       => $image,
 						'name'        => $result['name'],
 						'description' => utf8_substr(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8')), 0, $this->config->get('config_product_description_length')) . '..',
+						'button_text' => $button_text,
 						'price'       => $price,
 						'special'     => $special,
 						'tax'         => $tax,
 						'minimum'     => $result['minimum'] > 0 ? $result['minimum'] : 1,
 						'rating'      => $result['rating'],
-						'href'        => $this->url->link('product/product', 'path=' . $this->request->get['path'] . '&product_id=' . $result['product_id'] . $url)
+						'href'        => $href
 					);
 				} else {
 					$data['products'][] = array(
@@ -263,10 +274,11 @@ class ControllerProductCategory extends Controller {
 						'description' => utf8_substr(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8')), 0, $this->config->get('config_product_description_length')) . '..',
 						'price'       => $price,
 						'special'     => $special,
+						'button_text' => $button_text,
 						'tax'         => $tax,
 						'minimum'     => $result['minimum'] > 0 ? $result['minimum'] : 1,
 						'rating'      => $result['rating'],
-						'href'        => $this->url->link('product/product', 'product_id=' . $result['product_id'] . $url)
+						'href'        => $href
 					);
 				}
 			}
@@ -470,7 +482,6 @@ class ControllerProductCategory extends Controller {
 			$data['limit'] = $limit;
 
 			$data['continue'] = $this->url->link('common/home');
-
 			$data['common_banner'] = $this->load->controller('common/common_banner');
 			$data['column_left'] = $this->load->controller('common/column_left');
 			$data['column_right'] = $this->load->controller('common/column_right');

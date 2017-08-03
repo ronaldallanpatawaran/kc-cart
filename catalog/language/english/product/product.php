@@ -32,6 +32,7 @@ $_['text_semi_month']          = 'half-month';
 $_['text_month']               = 'month';
 $_['text_year']                = 'year';
 $_['text_refine']			   = 'Categories';
+$_['text_loading']			   = 'Loading....';
 
 // Entry
 $_['entry_qty']                = 'Quantity';

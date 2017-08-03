@@ -1075,6 +1075,8 @@ h2.price {
 }
 .product-thumb p{
 	font-size: 14px;
+	height: 20px;
+    overflow: hidden;
 }
 .product-thumb .button-group {
 	border-top: 1px solid #ddd;

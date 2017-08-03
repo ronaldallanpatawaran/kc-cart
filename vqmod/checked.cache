@@ -405,3 +405,5 @@ catalog\controller\module\category.php
 catalog\language\english\module\category.php
 catalog\view\theme\default\template\module\category.tpl
 catalog\controller\common\category.php
+catalog\model\payment\cod.php
+catalog\language\english\payment\cod.php

@@ -23,3 +23,4 @@ $_['text_model_asc']    = 'Model (A - Z)';
 $_['text_model_desc']   = 'Model (Z - A)';
 $_['text_limit']        = 'Show:';
 $_['button_view_details'] = 'View Details';
+$_['button_view_enquiry'] = "Enquire Product";

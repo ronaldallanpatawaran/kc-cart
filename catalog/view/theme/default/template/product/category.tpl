@@ -145,7 +145,7 @@
                 </p>
                 <?php } ?>
               </div>
-              <center><a href="<?php echo $product['href']; ?>"><button class="btn_yellow"><?php echo $button_view_details; ?></button></a></center>
+              <center><a href="<?php echo $product['href']; ?>"><button class="btn_yellow"><?php echo $product['button_text']; ?></button></a></center>
               <div class="button-group">
                 <button type="button" onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $button_cart; ?></span></button>
                 <button type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-heart"></i></button>

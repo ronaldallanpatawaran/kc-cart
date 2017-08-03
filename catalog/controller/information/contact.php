@@ -179,6 +179,12 @@ class ControllerInformationContact extends Controller {
 			$data['enquiry'] = '';
 		}
 
+		if (isset($this->request->get['product'])) {
+			$data['enquiry'] = $this->request->get['product'];
+		} else {
+			$data['enquiry'] = '';
+		}
+
 		if ($this->config->get('config_google_captcha_status')) {
 			$this->document->addScript('https://www.google.com/recaptcha/api.js');
 

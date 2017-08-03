@@ -573,6 +573,7 @@ class ControllerProductProduct extends Controller {
 			}
 
 			$data['common_banner'] = $this->load->controller('common/common_banner');
+			$data['category_all_link'] = $this->url->link('product/category');
 			$data['column_left'] = $this->load->controller('common/column_left');
 			$data['column_right'] = $this->load->controller('common/column_right');
 			$data['content_top'] = $this->load->controller('common/content_top');
@@ -654,6 +655,7 @@ class ControllerProductProduct extends Controller {
 			$this->response->addHeader($this->request->server['SERVER_PROTOCOL'] . ' 404 Not Found');
 
 			$data['common_banner'] = $this->load->controller('common/common_banner');
+			$data['category_all_link'] = $this->url->link('product/category');
 			$data['column_left'] = $this->load->controller('common/column_left');
 			$data['column_right'] = $this->load->controller('common/column_right');
 			$data['content_top'] = $this->load->controller('common/content_top');
